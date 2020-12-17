@@ -50,9 +50,8 @@ node server.js
 3.  Then edit the two avaible fields (Note Title and Note text).  Make sure to put something in both fields.  
 4.  Once both fields have text, you can save the note using the floppy disk icon on the top right side (* note, this icon will not appear if either field is missing input).
 
-```
 <img src="./images/createNoteExample.png" alt="location of create note button" width="500px" height="250px">
-```
+
 
 #### How to view a note
 1.  On the notes page on the left side of the screen, click on the title of the note you want to view.
