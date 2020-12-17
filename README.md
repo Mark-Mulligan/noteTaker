@@ -1,80 +1,79 @@
-# Unit 11 Express Homework: Note Taker
+# Employee Roster Generator
 
-## Description
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+## Description 
+The goal of this project was to allow the user to generate a html page that displays information about all the employees that work for a company.  The program generates a new file that is already formated and includes all the data the user inputed.  This project was built using node.j\ and includes the npm package inquirer to allow the user to interact with the program via the commandline.   
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+## Table of Contents
+  
+* [Installation](#installation)
+* [Usage](#usage)
+* [Walkthrough](#walkthrough)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
+  
+  
+## Installation
+** This project requires node.js so make sure that is installed on your system before doing anything else. **
 
-* The following HTML routes should be created:
+* Step 1: Navigate to the directory you want to store the project. Clone this your repository to your local computer using the command below. 
+```bash
+git clone https://github.com/MarkMulligan97/readmeGenerator.git
+```
 
-  * GET `/notes` - Should return the `notes.html` file.
+* Step 2: Use the command line to navigate to the directory that you cloned the project.
+Example:
+```bash
+cd directory/projectdirectory
+```
 
-  * GET `*` - Should return the `index.html` file
+* Step 3: Install the npm package dependencies from the package.json file.
+```bash
+npm install
+```
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
+* Step 4: While in the project directory, run the program using node using the command below.
+```bash
+node app.js
+```
+## Usage 
+After installing the project and all the required npm packages, run the project in your command line using node.  Make sure to be in the project directory.
+```bash
+node app.js
+```
+1.  Answer all the questions that are prompted to you in the command line.  
+2.  After all the questions have been answered, a team.html file will be generated in the output folder.
+3.  Also included in the output folder is an assets folder that contains all the css and images that go along with the generated html page.
 
-* The following API routes should be created:
+![Project Screenshot](./images/employeeGeneratorTop.png)
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
+## Walkthrough 
+[Video Demo](https://youtu.be/Q8pTRk2yF5w)
 
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+Example team.html generated using this project:
+[click here](./output/team.html)
 
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+## Tests
+Tests for this project are included in the test folder.  These tests are desigened to make sure all the classes are working properly.  
 
-## User Story
+* Make sure jest is installed using npm.
+* To run the tests, run 'npm run test' in the command line.
+```bash
+npm run test
+```
 
-AS A user, I want to be able to write and save notes
+## License
+This project is liscensed under an Apache license.
 
-I WANT to be able to delete notes I've written before
+For more info, checkout this link:
+https://opensource.org/licenses/Apache-2.0
 
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+## Questions
+[My Github](https://github.com/MarkMulligan97) || mark.mulligan.jr1@gmail.com
 
-## Business Context
+#### How to Contact Me
+Feel free to reach out to me if you have any questions about this project.  You can email me using the email listed above or can go to my github page to view my other projects and portfolio.
 
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
-
-## Acceptance Criteria
-
-Application should allow users to create and save notes.
-
-Application should allow users to view previously saved notes.
-
-Application should allow users to delete previously saved notes.
-
-## Deploying the App
-
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Important/HerokuGuide.md) for getting your app deployed on Heroku.
-
-- - -
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© Mark Mulligan 2020 All Rights Reserved.
