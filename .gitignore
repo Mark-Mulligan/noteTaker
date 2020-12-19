@@ -1,4 +1,3 @@
 node_modules
 .DS_Store
 backup.json
-package-lock.json
