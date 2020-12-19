@@ -16,6 +16,7 @@ This program is desigined to allow the user to take notes.  The user can make a 
 ## Installation
 ### View the Project Live
 If you would like to view this project live, you can use the link Below.
+
 https://note-taking-app-123.herokuapp.com/
 
 ### Run the Project Locally
